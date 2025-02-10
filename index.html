@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/26d7aa91b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .mulish {
+        font-family: "Mulish", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+      }
+    </style>
+    <title>ReTro</title>
+  </head>
+  <body class="mulish">
+    <!-- Nav Bar -->
+    <header>
+      <nav>
+        <div id="navBar" class="navbar bg-base-100 flex justify-around mt-4">
+          <div>
+            <div class="dropdown lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>Edit</a></li>
+                <li><a href="">Follow</a></li>
+                <li><a href="">Flag</a></li>
+              </ul>
+            </div>
+            <h1 class="text-2xl lg:text-3xl font-black">ReTro</h1>
+          </div>
+          <div class="hidden lg:block space-x-11">
+            <a href=""
+              ><button
+                class="border-2 rounded-full px-4 py-3 hover:bg-[#0307121A] tooltip tooltip-bottom"
+                data-tip="Home"
+              >
+                <i class="fa-solid fa-house"></i></button
+            ></a>
+            <a href=""
+              ><button
+                class="border-2 rounded-full px-4 py-3 hover:bg-[#0307121A] tooltip tooltip-bottom"
+                data-tip="Edit"
+              >
+                <i class="fa-solid fa-pen"></i></button
+            ></a>
+            <a href=""
+              ><button
+                class="border-2 rounded-full px-4 py-3 hover:bg-[#0307121A] tooltip tooltip-bottom"
+                data-tip="Follow"
+              >
+                <i class="fa-solid fa-user-plus"></i></button
+            ></a>
+            <a href=""
+              ><button
+                class="border-2 rounded-full px-4 py-3 hover:bg-[#0307121A] tooltip tooltip-bottom"
+                data-tip="Flag"
+              >
+                <i class="fa-solid fa-flag"></i></button
+            ></a>
+          </div>
+          <div>
+            <button
+              class="btn bg-[#797DFC] text-white lg:px-10 px-5 rounded-3xl text-xl"
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section>
+      <div class="mt-10 relative">
+        <div>
+          <img
+            class="mx-auto bg-[#12132D] w-[350px] h-[450px] lg:w-[1170px] lg:h-[550px] rounded-3xl"
+            src="images/bgbanner.png"
+            alt=""
+          />
+        </div>
+        <div class="absolute top-28 lg:top-[120px] inset-x-0">
+          <div
+            class="flex lg:flex-row flex-col justify-center lg:gap-48 items-center"
+          >
+            <div class="text-white space-y-6">
+              <h1
+                class="lg:text-6xl text-3xl font-extrabold lg:font-black text-white"
+              >
+                Welcome to the <br />
+                <span class="text-[#797DFC]">ReTro</span>
+                Forum
+              </h1>
+              <p>
+                Share your favorite opinion and win and wp <br />
+                forum coffee mug!
+              </p>
+              <label
+                class="input lg:w-full w-3/5 input-bordered flex items-center gap-2"
+              >
+                <input
+                  type="text"
+                  id="input-area"
+                  class="text-black grow"
+                  id="search-input"
+                  placeholder="Search here anything"
+                />
+                <button
+                  id="search-btn"
+                  class="badge badge-info text-white text-lg font-bold bg-[#797DFC] lg:px-5 lg:py-4 px-4 py-6"
+                >
+                  Search
+                </button>
+              </label>
+            </div>
+            <div
+              class="bg-white hidden lg:block lg:space-y-6 lg:w-[345px] lg:p-12 rounded-3xl text-2xl"
+            >
+              <h3 class="flex justify-between">
+                Registered Users <span>01</span>
+              </h3>
+              <h3 class="flex justify-between">Forum <span>01</span></h3>
+              <h3 class="flex justify-between">Topics <span>01</span></h3>
+              <h3 class="flex justify-between">Replies <span>01</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lets discuss section -->
+    <section>
+      <div class="text-center mt-28">
+        <h1 class="mb-6 text-4xl font-black">Let’s Discuss</h1>
+        <p>
+          You can share you're thoughts and also enjoy other people feedback and
+          their opinions on the topic.
+        </p>
+      </div>
+      <div id="spinner" class="text-center mt-24 hidden">
+        <span class="loading loading-spinner loading-lg"></span>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row mt-12 gap-6 justify-center mx-auto lg:mx-0"
+      >
+        <div class="space-y-6 comment-section" id="discussion-area"></div>
+        <div>
+          <div
+            class="lg:w-[374px] w-[360px] bg-[#12132D0D] p-6 rounded-2xl mx-auto lg:mx-0"
+          >
+            <div class="flex justify-between mb-6">
+              <h1 class="text-xl font-bold">Title</h1>
+              <h1>
+                <i class="fa-solid fa-check-double text-green-500"></i> Mark as
+                read (<span id="marked-as-read">0</span>)
+              </h1>
+            </div>
+            <div class="space-y-6" id="comment-push"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forum Section -->
+    <section>
+      <div
+        class="bg-[#12132D] lg:w-[1170px] w-[360px] items-center text-center lg:text-start p-12 rounded-3xl lg:p-24 flex mx-auto mt-24 flex-col-reverse lg:flex-row gap-4"
+      >
+        <div class="text-white space-y-9">
+          <h1 class="font-black text-4xl">Join Our Forum</h1>
+          <p class="text-[#FFFFFFCC]">
+            Share your favorite opinion and win and wp forum coffee mug! Yes,
+            you can run unit tests and view the results directly within the app.
+          </p>
+          <button
+            class="btn bg-[#797DFC] text-white lg:px-10 px-5 rounded-3xl text-xl"
+          >
+            Registered Now
+          </button>
+        </div>
+        <div>
+          <img
+            class="lg:w-[500px] w-[200px]"
+            src="images/joinforum.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Posts Section -->
+    <section>
+      <div class="text-center mt-28">
+        <h1 class="mb-6 text-4xl font-black">Latest Posts</h1>
+        <p>
+          Check out our daily uploaded posts and enjoy you're time while you're
+          here.
+        </p>
+      </div>
+      <div
+        id="post-section"
+        class="flex flex-col lg:flex-row justify-center gap-6 mt-24"
+      ></div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="footer footer-center p-10 bg-[#12132D0D] text-[#12132DB2]-content mt-24"
+    >
+      <aside>
+        <h1 class="font-extrabold text-2xl">ReTro</h1>
+        <p class="font-bold">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a <br />
+          piece of classical Latin literature from 45 BC
+        </p>
+      </aside>
+      <nav>
+        <hr />
+        <div class="grid grid-flow-col gap-4 text-4xl">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-solid fa-x"></i></a>
+        </div>
+      </nav>
+      <p>2017, All Rights Reserved.</p>
+    </footer>
+    <!-- Scripts area -->
+    <script src="Java Files/usersInformation.js"></script>
+    <script src="Java Files/markedAsReadSection.js"></script>
+    <script src="Java Files/uploadPosts.js"></script>
+    <script src="Java Files/search.js"></script>
+  </body>
+</html>
